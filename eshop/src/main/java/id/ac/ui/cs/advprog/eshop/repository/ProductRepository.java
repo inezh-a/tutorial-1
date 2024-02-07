@@ -27,9 +27,8 @@ public class ProductRepository {
         throw new IllegalArgumentException("Bad productId");
     }
 
-    public void delete(String productId) {
-        Product productToBeDeleted = findProductByProductId(productId);
-        productData.remove(productToBeDeleted);
+    public void delete(Product product) {
+        productData.remove(product);
     }
 
     public Iterator<Product> findAll() {
