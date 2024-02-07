@@ -27,10 +27,18 @@ public class ProductRepository {
         throw new IllegalArgumentException("Bad productId");
     }
 
+
     public void delete(Product product) {
         productData.remove(product);
     }
 
+    public Product edit(Product product) {
+        Product productToBeEdited = findProductByProductId(product.getProductId());
+        int productToBeEditedIndex = productData.indexOf(productToBeEdited);
+        productData.set(productToBeEditedIndex, product);
+        return product;
+    }
+ 
     public Iterator<Product> findAll() {
         return productData.iterator();
     }
