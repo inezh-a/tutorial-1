@@ -2,6 +2,7 @@ Rayhan Adhisworo Jardine H
 
 2006484186 A
 
+Reflection 1
 Dalam usaha saya untuk mengimplementasikan fitur delete-product serta edit-product, saya telah menerapkan beberapa praktis clean coding serta git-flow untuk memenuhi coding standard yang bagus. Salah satu contoh dari terapan ini adalah penamaan variabel dan method yang jelas dan deskriptif, seperti: variabel productToBeEdited dan method findProductByProductId. Setiap method juga dibuat pendek dan jelas apa yang dikerjakannya.
 Gitflow dipraktikan dengan mengerjakan fitur secara terpisah sepenuhnya pada branch tersendiri. 
 
